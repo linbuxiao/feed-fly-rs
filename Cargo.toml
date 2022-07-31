@@ -1,0 +1,20 @@
+[package]
+name = "feed-fly-rs"
+version = "0.1.0"
+ edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+teloxide = { version = "0.10", features = ["macros", "auto-send"] }
+log = "0.4"
+pretty_env_logger = "0.4"
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+redis = "0.21.5"
+reqwest = "0.11.11"
+serde = "*"
+serde_yaml = "0.9.4"
+chrono = "0.4"
+cron_clock = "0.8.0"
+clap = "3.2.16"
+
